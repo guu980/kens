@@ -236,6 +236,7 @@ protected:
 					if(remaining == 0)
 						break;
 				}
+				//printf("%d\n", total_size);
 				if(write_byte < 0)
 					break;
 			}
@@ -322,6 +323,8 @@ TEST_F(TestEnv_Any, TestTransfer_Connect_Send_Symmetric)
 	client.initialize();
 
 	this->runTest();
+
+	// assert(false);
 }
 
 TEST_F(TestEnv_Any, TestTransfer_Connect_Send_EOF)
